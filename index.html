@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engagement Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Engagement Monitor</h2>
+        <div class="monitor-box">
+            <video id="input_video" autoplay></video>
+            <canvas id="output_canvas"></canvas>
+        </div>
+        
+        <div class="dashboard">
+            <div class="stat">
+                <span>Engagement Score:</span>
+                <strong id="score">0%</strong>
+            </div>
+            <div class="stat">
+                <span>Status:</span>
+                <strong id="status">Analyzing...</strong>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
